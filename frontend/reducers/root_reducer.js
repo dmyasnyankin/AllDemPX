@@ -1,15 +1,12 @@
-import merge from 'lodash/merge';
+import { combineReducers } from 'redux';
+import sessionReducer from './session_reducer';
+import errorsReducer from './errors_reducer';
+import entitiesReducer from './entities_reducer';
 
-import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
+const rootReducer = combineReducers({
+    session: sessionReducer,
+    errors: errorsReducer,
+    entities: entitiesReducer,
+});
 
-const usersReducer = ( state = {}, action ) => {
-    Object.freeze(state);
-    switch (action.type) {
-        case RECEIVE_CURRENT_USER:
-            return merge( {}, state, {[action.currentUser.id]: action.currentUser});
-        default:
-            return state;
-    }
-};
-
-export default usersReducer;
+export default rootReducer;
