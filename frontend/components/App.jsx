@@ -1,9 +1,13 @@
+import GreetingContainer from './greeting/greeting_container';
 
 import React from 'react';
 
 const App = () => (
     <div>
-        <h1>All Dem PX</h1>
+        <header>
+            <h1>All Dem PX</h1>
+            <GreetingContainer />
+        </header>
     </div>
 )
 
