@@ -9,16 +9,27 @@
     color: gray; 
     background: transparent;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: space-between;
 }
 
 .overall-form{
     border: 1px solid black;
     border-radius: 5px;
     height: 60%;
-    width: 40%;
+    width: 30%;
     background: white;
     position: absolute;
+}
+
+.email-label{
+    color: gray;
+}
+
+.password-label{
+    color: gray;
 }
 
 
@@ -32,6 +43,7 @@
 }
 
 .login-form-box{
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     background: transparent;
     display: flex;
     justify-content: center;
@@ -42,7 +54,7 @@
 
 .login-form{
     height: 5px;
-    width: 20px;
+    width: 10px;
     background: transparent;
 }
 
@@ -60,7 +72,14 @@
 }
 
 .session-submit{
-    background: green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-content: flex-end;
+    height: 20px;
+    width: 40px;
+    background: rgb(120, 223, 120);
 }
 
 body{
@@ -70,10 +89,10 @@ body{
 }
 
 .tip_top_logo{
-    background: image_url("500px_logo_light_large.png")
+    background: image_url("https://goo.gl/images/fF47KF")
 }
 
-.main_welcome{
+.main-welcome{
     font-size: 48px;
     text-align: center;
     max-width: 900px;
@@ -81,4 +100,48 @@ body{
     margin: 0 auto;
     color: #FFF;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-welcome-description{
+    font-size: 30px;
+    text-align: center;
+    max-width: 900px;
+    padding: 40px 0;    
+    margin: 0 auto;
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.style-login{
+}
+
+.style-signup{
+    background: rgb(55, 207, 218);
+    border-radius: 20px;
+}
+
+.style-login-signup{
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.pretty-front-page-button{
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    width: 200px;
+    font-size: 38px;
+    background: rgb(55, 207, 218);
+    border-radius: 50px;
+    color: white;
+    margin: auto;
 }
