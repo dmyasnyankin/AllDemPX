@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PrettyFrontPage = () => {
     return (
@@ -14,7 +15,11 @@ const PrettyFrontPage = () => {
                 <br/>
             <h3 className="main-welcome-description">Your home away from home</h3>
             <br/>
-            <button className="pretty-front-page-button" to="/signup">Join Now!</button>
+            <Link to="/signup">
+                <div className="pretty-front-page-button">
+                <p>Join All Dem PX</p>
+                </div>
+            </Link>
         </div>
     )
 

@@ -2,17 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.main-pages{
+    height: 100%;
+    background: lightgray;
+    -webkit-background-size: cover;
 
-.login-signup{
-    border-radius: 5px;
-    border: 10px;
-    color: gray; 
-    background: transparent;
+}
+
+.app-style{
+    height: 100%;
+    background: image_url("baybaybridge.jpg");
+    -webkit-background-size: cover;
+}
+
+.splash{
+    height: 100%;
+ 
+}
+
+body{
+
+}
+
+.login-form-box{
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: transparent;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
 }
 
 .overall-form{
@@ -24,37 +43,17 @@
     position: absolute;
 }
 
-.email-label{
-    color: gray;
-}
-
-.password-label{
-    color: gray;
-}
-
-
 .login-form-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    margin-left: 100px;
-    
-}
-
-.login-form-box{
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 500px;
+    margin-left: 100px;   
 }
 
 .login-form{
-    height: 5px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     background: transparent;
 }
 
@@ -63,7 +62,10 @@
   background-color: transparent;
   border-radius: 5px;
   color: #71767a;
-  padding: 10px 20px;
+  margin: 20px;
+  height: 30px;
+  width: 370px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -71,25 +73,103 @@
   font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.login-header{
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+
+}
+.email-label{
+    color: gray;
+    margin: 20px;
+}
+
+.password-label{
+    color: gray;
+    margin: 20px;
+}
+
 .session-submit{
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    margin: 20px;
     padding: 10px;
     align-content: flex-end;
-    height: 20px;
-    width: 40px;
+    height: 30px;
+    width: 370px;
     background: rgb(120, 223, 120);
 }
 
-body{
-    background: image_url("baybaybridge.jpg");
-    -webkit-background-size: cover;
 
+// Greeting logo and Login and Signup buttons/Links
+
+.all-dem-px{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 .tip_top_logo{
-    background: image_url("https://goo.gl/images/fF47KF")
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-signup{
+    border-radius: 5px;
+    border: 10px;
+    color: gray; 
+    background: transparent;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+}
+
+.style-login-signup{
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+.style-login{
+}
+
+.style-signup{
+    background: rgb(55, 207, 218);
+    border-radius: 20px;
+}
+
+
+
+//Pretty Front Page Container CSS
+
+.pretty-front-page-button{
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    font-size: 32px;
+    background: rgb(55, 207, 218);
+    border-radius: 80px;
+    color: white;
+}
+.main-welcome-description{
+    font-size: 30px;
+    text-align: center;
+    max-width: 900px;
+    padding: 40px 0;    
+    margin: 0 auto;
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
 }
 
 .main-welcome{
@@ -102,46 +182,18 @@ body{
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.main-welcome-description{
-    font-size: 30px;
-    text-align: center;
-    max-width: 900px;
-    padding: 40px 0;    
-    margin: 0 auto;
-    color: #FFF;
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-}
-
-.style-login{
-}
-
-.style-signup{
+.header-button{
+    width: 100px;
+    height: 50px;
     background: rgb(55, 207, 218);
     border-radius: 20px;
-}
-
-.style-login-signup{
-    color: white;
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-content: space-between;
-}
-
-.pretty-front-page-button{
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: auto;
     display: flex;
     justify-content: center;
-    text-align: center;
-    align-content: center;
-    height: 100px;
-    width: 200px;
-    font-size: 38px;
-    background: rgb(55, 207, 218);
-    border-radius: 50px;
-    color: white;
-    margin: auto;
+    align-items: center;
+}
+
+.header-group{
+    display: flex;
+    justify-content: flex-end;
 }

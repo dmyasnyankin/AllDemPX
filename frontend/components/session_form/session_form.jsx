@@ -16,7 +16,7 @@ class SessionForm extends React.Component {
     handleSubmit(e){
         e.preventDefault;
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(() => this.props.history.push("/users"));
     }
 
     renderErrors() {
@@ -37,7 +37,9 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     <div className="overall-form">
                         <br />
-                        Please {this.props.formType} or {this.props.navLink}
+                        <div className="login-header">
+                            Please {this.props.formType} or {this.props.navLink}
+                        </div>
                         {this.renderErrors()}
                         <div className="login-form">
                             <br />

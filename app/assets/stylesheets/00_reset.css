@@ -54,3 +54,11 @@ input[type="submit"] {
   display: block;
   clear: both;
 }
+
+html{
+  background: lightgray;
+}
+
+main{
+  height: 100%;
+}
