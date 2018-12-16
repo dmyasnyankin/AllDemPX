@@ -1,13 +1,12 @@
 
-
-export const fetchPosts = () => (
+export const fetchPhotos = () => (
     $.ajax({
         method: "GET",
         url: "api/photos"
     })
 );
 
-export const fetchPost = (id) => (
+export const fetchPhoto = (id) => (
     $.ajax({
         method: "GET",
         url: `api/photos/${id}`
@@ -22,4 +21,9 @@ export const createPhoto = (photo) => (
     })
 );
 
-
+export const deletePhoto = (id) => {
+    $.ajax({
+        method: "DELETE",
+        url: `api/photos/${id}`
+    })
+}
