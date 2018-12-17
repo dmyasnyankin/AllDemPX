@@ -32,6 +32,10 @@ export const createPhoto = (photo) => dispatch => (
     PhotosAPIUtil.createPhoto(photo).then( photo => dispatch(receivePhoto(photo)))
 );
 
+export const updatePhoto = (photo) => dispatch => (
+    PhotosAPIUtil.updatePhoto(photo).then( photo => dispatch(receivePhoto(photo)))
+);
+
 export const deletePhoto = (id) => dispatch => (
     PhotosAPIUtil.deletePhoto(id).then( photo => dispatch(removePhoto(photo)))
 );
