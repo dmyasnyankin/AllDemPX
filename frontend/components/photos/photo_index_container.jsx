@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import PhotosIndex from './photo_index';
+import PhotoIndex from './photo_index';
 import { fetchPhotos, deletePhoto } from '../../actions/photos_actions';
 
 const mapStateToProps = state => {
@@ -17,4 +17,4 @@ const mapDispatchToProps = dispatch => {
     })
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PhotosIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(PhotoIndex);
