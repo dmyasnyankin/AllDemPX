@@ -16,12 +16,10 @@
 }
 
 .splash{
-    height: 100%;
- 
+    height: 100%; 
 }
 
 body{
-
 }
 
 .login-form-box{
@@ -35,12 +33,15 @@ body{
 }
 
 .overall-form{
+    margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 60%;
+    height: 65vh;
     width: 30%;
     background: white;
     position: absolute;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .login-form-container{
@@ -101,6 +102,21 @@ body{
     background: rgb(120, 223, 120);
 }
 
+.demo-submit{
+    border: 1px solid black;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+    height: 30px;
+    width: 370px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 
 // Greeting logo and Login and Signup buttons/Links
 
@@ -135,6 +151,7 @@ body{
 }
 
 .style-login{
+
 }
 
 .style-signup{
@@ -142,7 +159,9 @@ body{
     border-radius: 20px;
 }
 
-
+a:hover{
+    text-decoration: underline;
+}
 
 //Pretty Front Page Container CSS
 
@@ -180,17 +199,6 @@ body{
     margin: 0 auto;
     color: #FFF;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-.header-button{
-    width: 100px;
-    height: 50px;
-    background: rgb(55, 207, 218);
-    border-radius: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header-group{

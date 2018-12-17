@@ -14,10 +14,32 @@ class SessionForm extends React.Component {
     }
 
     handleSubmit(e){
-        e.preventDefault;
+        e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user).then(() => this.props.history.push("/users"));
     }
+
+    handleDemo(){
+        if (this.props.formType === "Login"){
+            return(
+                <input className="demo-submit"
+                    onClick={() => {
+                        this.setState ({
+                            email: "demo@gmail.com", 
+                            password: "demo123"})
+                            this.handleSubmit()
+                        }
+                    }
+                    type="submit"
+                    value="Demo Login"
+                    />
+            )
+        }
+    }
+        // e.preventDefault();
+        // this.setState({ email: "demo@gmail.com", password: "demo123" });
+        // const user = Object.assign({}, this.state);
+        // this.props.processForm(user).then(() => this.props.history.push("/users"));
 
     renderErrors() {
         return (
@@ -59,6 +81,7 @@ class SessionForm extends React.Component {
                                 />
                             </label>
                             <br />
+                            <div className="demo-button">{this.handleDemo()}</div>
                             <input className="session-submit" type="submit" value={this.props.formType} />
                         </div>
                     </div>

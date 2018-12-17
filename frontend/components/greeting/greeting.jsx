@@ -25,8 +25,43 @@ const Greeting = ({currentUser, logout, location, history}) => {
 
     const personalGreeting = () => (
         <hgroup className="header-group">
-            <h2 className="header-name">Howyadoin, {currentUser.email}?</h2>
-            <button className="header-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
+            <div className="icons-left">
+                <div className="header-logo2">
+                    <img src={"assets/500px_logo_dark_large.png"}/>
+                </div>
+                <div className="header-pics">
+                    <img src={"assets/image_logo.png"}/>
+                </div>
+            </div>
+
+
+            <div className="header-search">
+                <input type="text" placeholder="Search.."></input>
+            </div>
+            <div className="icons-right">
+                <div className="header-profile-main">
+                    <div className="header-profile">
+                        <img src={"assets/avatar_logo.png"}/>
+                    </div>
+                </div>
+                <div className="header-plane-main">
+                    <div className="header-plane">
+                        <img src={"assets/the_plane.svg"}/>
+                    </div>
+                </div>
+                <div className="header-bell-main">
+                    <div className="header-bell">
+                        <img src={"assets/the_bell.svg"}/>
+                    </div>
+                </div>
+                <div className="header-upload-main">
+                    <div className="header-upload">
+                        <img src={"assets/upload_logo.png"}/>
+                    </div>
+                </div>
+                <button className="header-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
+            </div>
+
         </hgroup>
     );
 
