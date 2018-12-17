@@ -32,6 +32,9 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 <div className="header-pics">
                     <img src={"assets/image_logo.png"}/>
                 </div>
+                <div className="header-dots">
+                    <img src={"assets/dots_logo.svg"}/>
+                </div>
             </div>
 
 
