@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoIndexItem from './photos_index_item';
+import PhotoIndexItem from './photo_index_item';
 import CreatePhotoFormContainer from './create_photo_form_container';
 
 class PhotoIndex extends React.Component {
@@ -11,7 +11,7 @@ class PhotoIndex extends React.Component {
         let photos = this.props.photos.map( photo => {
             return (
                 <PhotoIndexItem
-                    key={photos.id}
+                    key={photo.id}
                     photo={photo}
                     deletePhoto={this.props.deletePhoto}
                 />
