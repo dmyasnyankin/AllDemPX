@@ -21,9 +21,9 @@ class PhotoForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.title} onChange={this.update("title")} />
-                    <input type="text" value={this.state.image_url} onChange={this.update("image_url")}/>
-                    <input type="submit" value="Submit" />
+                    <input className="photo-title" type="text" value={this.state.title} onChange={this.update("title")} />
+                    <input className="photo-image" type="text" value={this.state.image_url} onChange={this.update("image_url")}/>
+                    <input className="photo-submit-button" type="submit" value="Submit" />
                 </form>
             </div>
         );

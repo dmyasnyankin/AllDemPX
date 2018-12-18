@@ -2,7 +2,7 @@ class Api::PhotosController < ApplicationController
     before_action :require_login, only: [:create]
 
     def index
-        @photo = Photo.all
+        @photos = Photo.all
     end
 
     def show
@@ -13,6 +13,9 @@ class Api::PhotosController < ApplicationController
         @photo = Photo.new(photo_params)
 
         if @photo.save
+            #fix id
+            #render takes u to template
+            #redirect starts a new request response cycle
             render "api/photos"
         else
             render json: @photo.errors.full_messages, status: 422
