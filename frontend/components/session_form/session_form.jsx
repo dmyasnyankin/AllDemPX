@@ -23,11 +23,10 @@ class SessionForm extends React.Component {
         if (this.props.formType === "Login"){
             return(
                 <input className="demo-submit"
-                    onClick={() => {
-                        this.setState ({
-                            email: "demo1@email.com", 
-                            password: "password"})
-                            this.handleSubmit()
+                    onClick={(e) => {
+                        e.preventDefault();
+                        const demo = {email: "demo1@email.com", password: "password"};
+                        this.props.processForm(demo).then(() => this.props.history.push("/users"));
                         }
                     }
                     type="submit"

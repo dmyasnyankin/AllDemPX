@@ -3,7 +3,8 @@ import React from 'react';
 class PhotoForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.photo;
+        this.state = Object.assign({}, this.props.photo, {photoFile: file})
+
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -15,14 +16,22 @@ class PhotoForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.action(this.state)
+        const formData = new FormData();
+        formData.append("photo[title]", this.state.title)
+        formData.append("photo[photo]", this.state.photoFile)
+        this.props.action(formData)
     }
+
+    handleFile(e){
+        this.setState({photoFile: e.currentTarget.files[0]});
+    }
+
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <input className="photo-title" type="text" value={this.state.title} onChange={this.update("title")} />
-                    <input className="photo-image" type="text" value={this.state.image_url} onChange={this.update("image_url")}/>
+                    <input type="file" onChange={this.handleFile.bind(this)}/>
                     <input className="photo-submit-button" type="submit" value="Submit" />
                 </form>
             </div>

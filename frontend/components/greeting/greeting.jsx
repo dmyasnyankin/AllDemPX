@@ -43,8 +43,13 @@ const Greeting = ({currentUser, logout, location, history}) => {
             </div>
             <div className="icons-right">
                 <div className="header-profile-main">
-                    <div className="header-profile">
-                        <img src={"assets/avatar_logo.png"}/>
+                    <div class="dropdown">
+                        <div className="header-profile">
+                            <button class="dropbtn"><img src={"assets/avatar_logo.png"} /></button>
+                            <div class="dropdown-content">
+                                <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="header-plane-main">
@@ -59,7 +64,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 </div>
                 <div className="header-upload-main">
                     <div className="header-upload">
-                        <img src={"assets/upload_logo.png"}/>
+                        <Link to="api/photos"><img src={"assets/upload_logo.png"} /></Link>
                     </div>
                 </div>
                 <button className="header-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>

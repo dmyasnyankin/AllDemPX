@@ -3,6 +3,7 @@ class Api::PhotosController < ApplicationController
 
     def index
         @photos = Photo.all
+        render :index
     end
 
     def show
@@ -10,12 +11,11 @@ class Api::PhotosController < ApplicationController
     end
 
     def create
+        # @photo = Photo.new(params[:photo][:title, :photo, :author_id])
+        # debugger
+        @photo.author_id = current_user.id
         @photo = Photo.new(photo_params)
-
         if @photo.save
-            #fix id
-            #render takes u to template
-            #redirect starts a new request response cycle
             render "api/photos"
         else
             render json: @photo.errors.full_messages, status: 422
@@ -33,6 +33,6 @@ class Api::PhotosController < ApplicationController
     end
 
     def photo_params
-        params.require(:photos).permit(:title, :image_url, :author_id)
+        params.require(:photo).permit(:title, :author_id, :photo)
     end
 end
