@@ -25,8 +25,8 @@ class SessionForm extends React.Component {
                 <input className="demo-submit"
                     onClick={() => {
                         this.setState ({
-                            email: "demo@gmail.com", 
-                            password: "demo123"})
+                            email: "demo1@email.com", 
+                            password: "password"})
                             this.handleSubmit()
                         }
                     }
