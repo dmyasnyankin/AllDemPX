@@ -4,7 +4,7 @@ import React from 'react';
 import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from './session_form/login_form_container';
 import PrettyFrontPage from './pretty_front_page';
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import PhotoIndexContainer from './photos/photo_index_container';
 
 //switch router doesnt work when i wrap my auth routes in it 
@@ -21,9 +21,9 @@ const App = () => (
             <Route exact path="/" component={PrettyFrontPage} />
         </div>
         <div className="main-pages">
-            <AuthRoute path="/login" component={LoginFormContainer} />
-            <AuthRoute path="/signup" component={SignupFormContainer} />
-            <Route path="/users" component={PhotoIndexContainer} />
+            <AuthRoute exact path="/login" component={LoginFormContainer} />
+            <AuthRoute exact path="/signup" component={SignupFormContainer} />
+            <ProtectedRoute path="/users" component={PhotoIndexContainer} />
         </div>
 
     </div>

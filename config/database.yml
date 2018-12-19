@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: all_dem_px_production
-  username: all_dem_px
-  password: <%= ENV['ALL_DEM_PX_DATABASE_PASSWORD'] %>
+  # username: all_dem_px
+  # password: <%= ENV['ALL_DEM_PX_DATABASE_PASSWORD'] %>
