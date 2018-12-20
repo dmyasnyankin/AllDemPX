@@ -7,8 +7,11 @@ const PhotoIndexItem = props => (
         <div className="photo-index-picture">
             <img src={props.photo.imageUrl}/>
         </div>
+        <br/>
         <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
+        <br/>
         <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
+        <br/>
         <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button>
     </div>
 )
