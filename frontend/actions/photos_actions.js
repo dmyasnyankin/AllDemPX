@@ -16,7 +16,7 @@ const receivePhoto = ({photo}) => ({
 });
 
 const removePhoto = (photo) => ({
-    type: REMOVE_POST,
+    type: REMOVE_PHOTO,
     photoId: photo.id
 });
 

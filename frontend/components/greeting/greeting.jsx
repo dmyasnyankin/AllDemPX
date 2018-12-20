@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+// hi dennis 
+
 const Greeting = ({currentUser, logout, location, history}) => {
     if (location.pathname=="/login" || location.pathname=="/signup"){
         return null;
@@ -67,9 +69,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
                         <Link to="api/photos"><img src={"assets/upload_logo.png"} /></Link>
                     </div>
                 </div>
-                <button className="header-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
             </div>
-
         </hgroup>
     );
 
