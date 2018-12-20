@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom';
 
 const PhotoIndexItem = props => (
     <div className="photo-index-item">
-        <img src={props.photo.imageUrl}/>
+        <div className="photo-index-picture">
+            <img src={props.photo.imageUrl}/>
+        </div>
         <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
         <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
         <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button>

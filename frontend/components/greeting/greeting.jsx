@@ -39,7 +39,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
 
 
             <div className="header-search">
-                <input type="text" placeholder="Search.."></input>
+                <input type="text" placeholder="Search..."></input>
             </div>
             <div className="icons-right">
                 <div className="header-profile-main">
