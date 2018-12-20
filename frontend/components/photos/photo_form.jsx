@@ -3,7 +3,7 @@ import React from 'react';
 class PhotoForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = Object.assign({}, this.props.photo, {photoFile: file})
+        this.state = Object.assign({}, this.props.photo, {photoFile: null})
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }

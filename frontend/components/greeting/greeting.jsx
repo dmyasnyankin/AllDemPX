@@ -43,10 +43,10 @@ const Greeting = ({currentUser, logout, location, history}) => {
             </div>
             <div className="icons-right">
                 <div className="header-profile-main">
-                    <div class="dropdown">
+                    <div className="dropdown">
                         <div className="header-profile">
-                            <button class="dropbtn"><img src={"assets/avatar_logo.png"} /></button>
-                            <div class="dropdown-content">
+                            <button className="dropbtn"><img src={"assets/avatar_logo.png"} /></button>
+                            <div className="dropdown-content">
                                 <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
                             </div>
                         </div>

@@ -13,22 +13,23 @@ export const fetchPhoto = (id) => (
     })
 );
 
-export const createPhoto = (photo) => (
-    $.ajax({
-        method: "POST",
-        url: "api/photos",
-        data: {photo},
-        contentType: false,
-        processData: false
-    })
-);
+export const createPhoto = (photo) => {
+    return ($.ajax({
+            method: "POST",
+            url: "api/photos",
+            data: photo,
+            contentType: false,
+            processData: false
+        })
+    )
+};
 
-export const deletePhoto = (id) => {
-    $.ajax({
-        method: "DELETE",
-        url: `api/photos/${id}`
-    })
-}
+// export const deletePhoto = (id) => {
+//     $.ajax({
+//         method: "DELETE",
+//         url: `api/photos/${id}`
+//     })
+// }
 
 export const updatePhoto = (photo) => (
     $.ajax({

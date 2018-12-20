@@ -11,6 +11,7 @@ import PhotoIndexContainer from './photos/photo_index_container';
 
 
 const App = () => (
+    <Switch>
     <div className="app-style">
         <header>
             <GreetingContainer />
@@ -27,6 +28,7 @@ const App = () => (
         </div>
 
     </div>
+    </Switch>
     
 )
 
