@@ -8,7 +8,9 @@ const PhotoIndexItem = props => (
             <img src={props.photo.imageUrl}/>
         </div>
         <br/>
-        <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
+        <div className="photo-index-picture-title">
+            <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
+        </div>
         <br/>
         <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
         <br/>
