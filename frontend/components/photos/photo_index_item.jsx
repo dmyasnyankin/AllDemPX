@@ -9,12 +9,12 @@ const PhotoIndexItem = props => (
         </div>
         <br/>
         <div className="photo-index-picture-title">
-            <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
+            <Link to={`/photos/${props.photo.id}`}>{props.photo.title}</Link>
         </div>
         <br/>
         <div className="photo-index-buttonicles">
             <div className="photo-index-edit">
-                <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
+                <Link to={`/photos/${props.photo.id}`}>Edit</Link>
             </div>
             <br/>
             <div className="photo-index-delete">

@@ -33,10 +33,10 @@ const Greeting = ({currentUser, logout, location, history}) => {
                     
                 </div>
                 <div className="header-pics">
-                    <i class="fas fa-images"></i>
+                    <i className="fas fa-images"></i>
                 </div>
                 <div className="header-dots">
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i className="fas fa-ellipsis-h"></i>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 <div className="header-profile-main">
                     <div className="dropdown">
                         <div className="header-profile">
-                            <button className="dropbtn"><i class="fas fa-user-circle"></i></button>
+                            <button className="dropbtn"><i className="fas fa-user-circle"></i></button>
                             <div className="dropdown-content">
                                 <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
                             </div>
@@ -67,7 +67,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 </div>
                 <div className="header-upload-main">
                     <div className="header-upload">
-                        <Link to="api/photos"><i class="fas fa-cloud-upload-alt"></i></Link>
+                        <Link to="/photos/:photoId"><i className="fas fa-cloud-upload-alt"></i></Link>
                     </div>
                 </div>
             </div>

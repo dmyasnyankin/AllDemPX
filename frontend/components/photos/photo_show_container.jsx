@@ -5,7 +5,7 @@ import { fetchPhoto } from '../../actions/photos_actions';
 const mapStateToProps = (state, ownProps) => {
     let photoId = ownProps.match.params.photoId;
     return ({
-        photo: state.photos[photoId]
+        photo: state.entities.photos[photoId]
     })
 }
 

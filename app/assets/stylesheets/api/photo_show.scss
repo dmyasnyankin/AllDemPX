@@ -1,0 +1,51 @@
+.show-page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-picture-frame{
+    display: flex;
+    height: 400px;
+    width: 600px;
+}
+
+.show-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.show-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.show-title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.show-index-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+}
