@@ -34,8 +34,6 @@ photo1.photo.attach(io: image1, filename: "pretty_bridge.jpg")
 image2 = open("app/assets/images/ggb2.jpg")
 photo2.photo.attach(io: image2, filename: "beautiful_bridge.jpg")
 
-p "photo two #{photo2.photo.attached?}"
-
 image3 = open("app/assets/images/ggb3.jpg")
 photo3.photo.attach(io: image3, filename: "wonderful_bridge.jpg")
 
