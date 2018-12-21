@@ -29,25 +29,26 @@ const Greeting = ({currentUser, logout, location, history}) => {
         <hgroup className="header-group">
             <div className="icons-left">
                 <div className="header-logo2">
-                    <img src={"assets/500px_logo_dark_large.png"}/>
+                    <Link to="/users"><i className="fas fa-camera-retro"></i></Link>
+                    
                 </div>
                 <div className="header-pics">
-                    <img src={"assets/image_logo.png"}/>
+                    <i class="fas fa-images"></i>
                 </div>
                 <div className="header-dots">
-                    <img src={"assets/dots_logo.svg"}/>
+                    <i class="fas fa-ellipsis-h"></i>
                 </div>
             </div>
 
 
             <div className="header-search">
-                <input type="text" placeholder="Search..."></input>
+                <input type="text" placeholder="Search All-Dem-Px..."></input>
             </div>
             <div className="icons-right">
                 <div className="header-profile-main">
                     <div className="dropdown">
                         <div className="header-profile">
-                            <button className="dropbtn"><img src={"assets/avatar_logo.png"} /></button>
+                            <button className="dropbtn"><i class="fas fa-user-circle"></i></button>
                             <div className="dropdown-content">
                                 <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
                             </div>
@@ -56,17 +57,17 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 </div>
                 <div className="header-plane-main">
                     <div className="header-plane">
-                        <img src={"assets/the_plane.svg"}/>
+                        <i className="fab fa-telegram-plane"></i>
                     </div>
                 </div>
                 <div className="header-bell-main">
                     <div className="header-bell">
-                        <img src={"assets/the_bell.svg"}/>
+                        <i className="fas fa-bell"></i>
                     </div>
                 </div>
                 <div className="header-upload-main">
                     <div className="header-upload">
-                        <Link to="api/photos"><img src={"assets/upload_logo.png"} /></Link>
+                        <Link to="api/photos"><i class="fas fa-cloud-upload-alt"></i></Link>
                     </div>
                 </div>
             </div>

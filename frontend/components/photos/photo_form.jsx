@@ -29,9 +29,9 @@ class PhotoForm extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form className="photo-form" onSubmit={this.handleSubmit}>
                     <input className="photo-title" type="text" value={this.state.title} onChange={this.update("title")} />
-                    <input type="file" onChange={this.handleFile.bind(this)}/>
+                    <input className="photo-file" type="file" onChange={this.handleFile.bind(this)}/>
                     <input className="photo-submit-button" type="submit" value="Submit" />
                 </form>
             </div>

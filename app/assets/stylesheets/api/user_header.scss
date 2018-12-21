@@ -25,15 +25,14 @@
 .header-search{
     display: flex;
     justify-content: flex-start;
-    height: 30px;
+    height: 20px;
     width: 400px;
     border-radius: 5px;
     border: 1px solid black;
-    margin-left: 100px;
 }
 
 .icons-left{
-    display: inline-flex;
+    display: flex;
     justify-content: flex-start;
     align-content: flex-start;
 }
@@ -41,14 +40,14 @@
 .header-dots{
     height: 30px;
     width: 30px;
-    margin-right: 290px;
+    margin-right: 500px;
 }
 
 .header-logo2{
     height: 30px;
-    width: 80px;
+    width: 30px;
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 80px;
     display: inline-flex;
     justify-content: flex-start;
 
@@ -114,7 +113,37 @@
 }
 
 .header-upload:hover{
-    background-color: greenyellow;
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-bell:hover{
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-plane:hover{
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-profile:hover{
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-pics:hover{
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-dots:hover{
+    color: lightblue;
+    border-radius: 5px;
+}
+
+.header-logo2:hover{
+    color: lightblue;
     border-radius: 5px;
 }
 
@@ -140,6 +169,7 @@
 
 .dropdown-content{
     visibility: hidden;
+    border: 1px solid black;
 }
 
 .dropdown:hover .dropdown-content{

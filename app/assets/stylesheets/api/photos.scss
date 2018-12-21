@@ -42,7 +42,7 @@
   box-sizing: border-box;
   overflow: scroll;
   // border: 1px solid black;
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 
 
@@ -51,7 +51,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: grey;
+    background-color: lightblue;
   }
 }
 
@@ -65,11 +65,32 @@
   display: flex;
   justify-content: center;
 }
+
+.photo-index-buttonicles{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-index-delete{
+  margin: auto;
+  display: flex;
+
+}
+
+.photo-index-title{
+  margin: auto;
+  display: flex;
+}
 //Create photo post container
 
 .photo-title{
     background: transparent;
     margin-top: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+
 }
 
 .photo-image{
@@ -78,6 +99,21 @@
 }
 
 .photo-submit-button{
-    background: transparent;
+    border-radius: 2px;
+    background: darkgray;
     margin-top: 10px;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+}
+
+.photo-form{
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.photo-file{
+  cursor: pointer;
 }

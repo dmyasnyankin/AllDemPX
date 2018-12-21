@@ -12,9 +12,15 @@ const PhotoIndexItem = props => (
             <Link to={`api/photos/${props.photo.id}`}>{props.photo.title}</Link>
         </div>
         <br/>
-        <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
-        <br/>
-        <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button>
+        <div className="photo-index-buttonicles">
+            <div className="photo-index-edit">
+                <Link to={`api/photos/${props.photo.id}`}>Edit</Link>
+            </div>
+            <br/>
+            <div className="photo-index-delete">
+                <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button>
+            </div>
+        </div>
     </div>
 )
 
