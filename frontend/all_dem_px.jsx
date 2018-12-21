@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("something");
     let store;
     if (window.currentUser) {
         const preloadedState = {
