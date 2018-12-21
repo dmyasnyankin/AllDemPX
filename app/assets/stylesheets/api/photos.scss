@@ -58,6 +58,12 @@
 .photo-index-picture{
   height: 300px;
   width: 400px;
+  transition: height 0.3s, width 0.3s linear;
+}
+
+.photo-index-picture:hover{
+  height: 360px;
+  width: 480px;
 }
 
 .photo-index-picture-title{
