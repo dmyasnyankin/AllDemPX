@@ -21,8 +21,8 @@ class PhotoIndex extends React.Component {
         return(
             <div className="photo-index">
                 <h1 className="photos-index-title">Recommended Photos</h1>
-                <p className="photo-index-description">Based on your preferences</p>
-                <br/>
+                <h3 className="photo-index-description">Based on your preferences</h3>
+                <hr/>
                 <ul className="ul-photos">
                     {photos}
                 </ul>

@@ -26,7 +26,7 @@
   justify-content: center;
   align-content: center;
   margin-left: 70px;
-  height: 700px;
+  height: 1000px;
   width: 90%;
   background: whitesmoke;
   -webkit-background-size: cover;
@@ -62,14 +62,15 @@
 }
 
 .photo-index-picture:hover{
-  height: 360px;
-  width: 480px;
+  height: 321px;
+  width: 428px;
 }
 
 .photo-index-picture-title{
   margin: auto;
   display: flex;
   justify-content: center;
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
 }
 
 .photo-index-buttonicles{
@@ -79,10 +80,14 @@
   align-items: center;
 }
 
+.photo-index-edit{
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+}
+
 .photo-index-delete{
   margin: auto;
   display: flex;
-
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
 }
 
 .photo-index-title{
@@ -96,7 +101,6 @@
     margin-top: 10px;
     border: 1px solid black;
     margin-bottom: 20px;
-
 }
 
 .photo-image{
@@ -109,6 +113,24 @@
     background: darkgray;
     margin-top: 10px;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+}
+
+.photo-index-bottom-page{
+}
+
+.photo-index-upload-title{
+  display: flex;
+  justify-content: flex-start;
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.photo-index-upload-description{
+  display: flex;
+  justify-content: flex-start;
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+  font-weight: lighter;
 }
 
 .photo-form{
