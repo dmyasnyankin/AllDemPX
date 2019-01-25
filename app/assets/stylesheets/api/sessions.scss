@@ -15,9 +15,9 @@
     -webkit-background-size: cover;
 }
 
-.splash{
-    height: 100%; 
-}
+// .splash{
+//     height: 100%; 
+// }
 
 body{
 }
@@ -33,11 +33,11 @@ body{
 }
 
 .overall-form{
-    margin-top: 10px;
+    margin-top: 100px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 65vh;
-    width: 30%;
+    height: 70%;
+    width: 50%;
     background: white;
     position: absolute;
     padding-bottom: 25px;
@@ -53,8 +53,8 @@ body{
 }
 
 .login-form{
-    height: 20px;
-    width: 20px;
+    display: flex;
+    flex-direction: column;
     background: transparent;
 }
 
@@ -63,9 +63,8 @@ body{
   background-color: transparent;
   border-radius: 5px;
   color: #71767a;
-  margin: 20px;
   height: 30px;
-  width: 370px;
+  width: 85%;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -75,19 +74,23 @@ body{
 }
 
 .login-header{
+    display: flex;
+    justify-content: center;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin: 20px;
     padding: 10px;
 
 }
 .email-label{
     color: gray;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .password-label{
     color: gray;
     margin: 20px;
+    width: 100%;
 }
 
 .session-submit{
@@ -98,7 +101,7 @@ body{
     padding: 10px;
     align-content: flex-end;
     height: 30px;
-    width: 370px;
+    width: 85%;
     background: rgb(120, 223, 120);
 }
 
@@ -107,9 +110,9 @@ body{
     background-color: blue;
     border-radius: 5px;
     color: white;
-    margin: 20px;
+    margin-left: 20px;
     height: 30px;
-    width: 370px;
+    width: 85%;
     padding: 10px;
     text-align: center;
     display: inline-block;

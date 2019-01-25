@@ -15,18 +15,18 @@ const App = () => (
     <div className="app-style">
         <header>
             <GreetingContainer />
-            <h1 className="logo"></h1>
+            {/* <h1 className="logo"></h1> */}
         </header>
         
-        <div className="splash">
+        {/* <div className="splash"> */}
             <Route exact path="/" component={PrettyFrontPage} />
-        </div>
-        <div className="main-pages">
+        {/* </div> */}
+        {/* <div className="main-pages"> */}
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
             <Route path="/users" component={PhotoIndexContainer} />
             <Route path="/photos/:photoId" component={PhotoShowContainer}/>
-        </div>
+        {/* </div> */}
     </div>
     </Switch>
     
