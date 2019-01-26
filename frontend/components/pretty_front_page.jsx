@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PrettyFrontPage = () => {
     return (
         <div>
-            <h1 className="main-welcome">Experience and be the lens of inspiration and all that doohickey</h1>
+            <h1 className="main-welcome">Experience and be the lens of inspiration, sharing it with the world</h1>
                 <br/>
                 <br/>
                 <br/>
@@ -17,7 +17,7 @@ const PrettyFrontPage = () => {
             <br/>
             <Link to="/signup">
                 <div className="pretty-front-page-button">
-                <p>Join All Dem PX</p>
+                <p>Join PXtures</p>
                 </div>
             </Link>
         </div>
