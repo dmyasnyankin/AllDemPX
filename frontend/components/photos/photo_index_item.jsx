@@ -2,7 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const PhotoIndexItem = props => (
+const PhotoIndexItem = props => {
+    
+    return (
     <div className="photo-index-item">
         <div className="photo-index-picture">
             <img src={props.photo.imageUrl}/>
@@ -18,11 +20,12 @@ const PhotoIndexItem = props => (
             </div>
             <br/>
             <div className="photo-index-delete">
-                <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button>
+                {/* <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button> */}
+                <button onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}>Delete</button>
             </div>
         </div>
     </div>
-)
+)}
 
 
 export default PhotoIndexItem;

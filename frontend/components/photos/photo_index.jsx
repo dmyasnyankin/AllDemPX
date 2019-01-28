@@ -14,6 +14,7 @@ class PhotoIndex extends React.Component {
                     key={photo.id}
                     photo={photo}
                     deletePhoto={this.props.deletePhoto}
+                    history={this.props.history}
                 />
             )
         })
