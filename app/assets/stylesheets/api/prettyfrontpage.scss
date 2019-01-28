@@ -1,0 +1,68 @@
+.splash-page{
+    min-width: 800px;
+    background: image_url("downtownsf3.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-page-div{
+    max-width: 800px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+    .splash-page-image{
+
+    }
+.splash-nav-left{
+}
+.splash-nav-right{
+}
+
+.splash-main-quote{
+    display: flex;
+    justify-content: center;
+    // font-size: 48px;
+    // text-align: center;
+    // max-width: 900px;
+    // padding: 40px 0;
+    margin: 0 auto;
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.splash-quote-des{
+    display: flex;
+    justify-content: center;
+    // font-size: 30px;
+    // text-align: center;
+    // max-width: 900px;
+    // padding: 40px 0;    
+    // margin: 0 auto;
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.splash-link{
+    display: flex;
+    justify-content: center;
+}
+
+.splash-button{
+    height: 50px;
+    width: 160px;
+    border-radius: 30px;
+    background: #0099e5;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+}
