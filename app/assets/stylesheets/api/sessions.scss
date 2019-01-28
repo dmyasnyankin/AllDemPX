@@ -29,11 +29,11 @@
 
 .overall-form{
     margin-top: 100px;
-    border: 1px solid black;
+    border: 1px solid darkgray;
     border-radius: 5px;
     height: 500px;
     width: 500px;
-    background: white;
+    background: rgba(238, 238, 238, 0.9);
     position: absolute;
     padding-bottom: 25px;
     margin-bottom: 20px;
@@ -54,10 +54,10 @@
 }
 
 .login-input{
-  border: 1px solid black;
+  border: 1px solid darkgray;
   background-color: transparent;
   border-radius: 5px;
-  color: #71767a;
+//   color: #71767a;
   height: 30px;
   width: 87%;
   padding: 10px;
@@ -66,9 +66,12 @@
   display: inline-block;
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+//   color: darkgray;
+//   text-shadow: 0.5px 0.5px 0.5px lightgray;
 }
 
 .login-header{
+    font-size: 20px;
     display: flex;
     justify-content: center;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -76,14 +79,16 @@
 
 }
 .email-label{
-    color: gray;
+    color: darkgray;
+    text-shadow: 0.5px 0.5px 0.5px lightgray;    
     margin-left: 20px;
     margin-right: 20px;
     width: 100%;
 }
 
 .password-label{
-    color: gray;
+    color: darkgray;
+    text-shadow: 0.5px 0.5px 0.5px lightgray;    
     margin: 20px;
     width: 100%;
 }
@@ -96,20 +101,21 @@
     padding: 10px;
     align-content: flex-end;
     height: 30px;
-    width: 85%;
+    width: 87%;
+    border: 1px solid darkgray;
     background: rgb(120, 223, 120);
     text-shadow: 1px 1px 1px darkgray;
 }
 
 .demo-submit{
-    border: 1px solid black;
+    border: 1px solid darkgray;
     background-color: blue;
     border-radius: 5px;
     color: white;
     text-shadow: 1px 1px 1px black;
     margin-left: 20px;
     height: 30px;
-    width: 85%;
+    width: 87%;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -117,3 +123,18 @@
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.session-footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color: darkgray;
+    text-shadow: 0.5px 0.5px 0.5px lightgray;
+
+}
+
+.session-footer-link{
+    color: rgba(0, 153, 229, 0.8);
+}
