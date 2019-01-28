@@ -18,6 +18,7 @@
 
 .login-form-box{
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px darkgray;
     background: transparent;
     display: flex;
     justify-content: center;
@@ -30,8 +31,8 @@
     margin-top: 100px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 70%;
-    width: 50%;
+    height: 500px;
+    width: 500px;
     background: white;
     position: absolute;
     padding-bottom: 25px;
@@ -58,7 +59,7 @@
   border-radius: 5px;
   color: #71767a;
   height: 30px;
-  width: 85%;
+  width: 87%;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -97,6 +98,7 @@
     height: 30px;
     width: 85%;
     background: rgb(120, 223, 120);
+    text-shadow: 1px 1px 1px darkgray;
 }
 
 .demo-submit{
@@ -104,6 +106,7 @@
     background-color: blue;
     border-radius: 5px;
     color: white;
+    text-shadow: 1px 1px 1px black;
     margin-left: 20px;
     height: 30px;
     width: 85%;
