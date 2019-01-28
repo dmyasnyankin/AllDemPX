@@ -148,7 +148,9 @@
 }
 
 .profile-button{
-    
+    background: transparent;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .header-button{
@@ -169,9 +171,20 @@
 
 .dropdown-content{
     visibility: hidden;
-    border: 1px solid black;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid darkgray;
 }
 
 .dropdown:hover .dropdown-content{
     visibility: visible;
+    color: black;
 }

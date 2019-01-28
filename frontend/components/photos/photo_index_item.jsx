@@ -6,21 +6,20 @@ const PhotoIndexItem = props => {
     return (
     <div className="photo-index-item">
         <div className="photo-index-picture">
-            <img src={props.photo.imageUrl}/>
+            <Link to={`/photos/${props.photo.id}`}><img src={props.photo.imageUrl}/></Link>
         </div>
         <br/>
-        <div className="photo-index-picture-title">
+        {/* <div className="photo-index-picture-title">
             <Link to={`/photos/${props.photo.id}`}>{props.photo.title}</Link>
-        </div>
+        </div> */}
         <br/>
         <div className="photo-index-buttonicles">
-            <div className="photo-index-edit">
+            {/* <div className="photo-index-edit">
                 <Link to={`/photos/${props.photo.id}`}>Edit</Link>
             </div>
-            <br/>
+            <br/> */}
             <div className="photo-index-delete">
-                {/* <button onClick={() => props.deletePhoto(props.photo.id)}>Delete</button> */}
-                <button onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}>Delete</button>
+                <button className="photo-index-delete-frame" onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}>Delete</button>
             </div>
         </div>
     </div>
