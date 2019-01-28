@@ -31,12 +31,12 @@ const PrettyFrontPage = () => {
                     <Link to="">
                         <button className="splash-nav-logo" >PXtures</button>
                     </Link>
-                    <Link to="">
+                    <a href={"https://www.linkedin.com/in/dennis-myasnyankin/"}>
                         <button className="splash-nav-discover">Discover</button>
-                    </Link>
-                    <Link to="">
+                    </a>
+                    <a href={"https://github.com/dmyasnyankin/AllDemPX"}>
                         <button className="splash-nav-about">About</button>
-                    </Link>
+                    </a>
                 </div>
                 <div className="splash-nav-right">
                     <Link to="/login">
