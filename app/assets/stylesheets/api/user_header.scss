@@ -6,21 +6,12 @@
 .header-group{
     background-color: white;
     display: flex;
-    justify-content: flex-start;
-    align-content: space-between;
-    align-content: center;
+    // justify-content: flex-start;
+    // align-content: space-between;
+    // align-content: center;
     padding: 10px;
 }
 
-.header-name{
-    height: 20px;
-    width: 200px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin-right: 20px;
-}
 
 .header-search{
     display: flex;
@@ -32,38 +23,69 @@
 }
 
 .icons-left{
+    float: left;
     display: flex;
     justify-content: flex-start;
-    align-content: flex-start;
+    margin-top: 1%;
+    margin-left: 5.5%;
+    // margin-right: 2%;
+    margin-bottom: 1%;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    width: 50%;
 }
 
-.header-dots{
-    height: 30px;
-    width: 30px;
-    margin-right: 500px;
-}
+    .header-retro-cam{
+        height: 30px;
+        width: 30px;
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-retro-cam:hover{
+            color: lightblue;
+            border-radius: 5px;
+        }
 
-.header-logo2{
-    height: 30px;
-    width: 30px;
-    margin-right: 30px;
-    margin-left: 80px;
-    display: inline-flex;
-    justify-content: flex-start;
+    .header-discover{
+        height: 30px;
+        width: 100px;
+        margin-right: 10%;
+        text-shadow: 1px 1px 1px darkgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-discover:hover{
+            color: lightblue;
+            border-radius: 5px;
+        }
 
-}
+    .header-about{
+        height: 30px;
+        width: 100px;
+        text-shadow: 1px 1px 1px darkgray;
+        margin-right: 500px;
+        font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-about:hover{
+            color: lightblue;
+            // border-radius: 5px;
+        }
 
-.header-pics{
-    height: 30px;
-    width: 30px;
-    margin-right: 30px;
-}
+
 
 .icons-right{
+    float: right;
     display: flex;
     justify-content: flex-end;
     // align-content: space-around;
-    margin-left: 20px;
+    width: 50%;
+    margin-right: 5.5%;
 }
 
 .header-profile-main{
@@ -132,20 +154,8 @@
     border-radius: 5px;
 }
 
-.header-pics:hover{
-    color: lightblue;
-    border-radius: 5px;
-}
 
-.header-dots:hover{
-    color: lightblue;
-    border-radius: 5px;
-}
 
-.header-logo2:hover{
-    color: lightblue;
-    border-radius: 5px;
-}
 
 .profile-button{
     background: transparent;

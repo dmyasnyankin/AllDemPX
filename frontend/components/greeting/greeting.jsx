@@ -22,22 +22,24 @@ const Greeting = ({currentUser, logout, location, history}) => {
     const personalGreeting = () => (
         <hgroup className="header-group">
             <div className="icons-left">
-                <div className="header-logo2">
+                <div className="header-retro-cam">
                     <Link to="/users"><i className="fas fa-camera-retro"></i></Link>
                     
                 </div>
-                <div className="header-pics">
-                    <i className="fas fa-images"></i>
+                <div className="header-discover">
+                    {/* <i className="fas fa-images"></i> */}
+                    Discover
                 </div>
-                <div className="header-dots">
-                    <i className="fas fa-ellipsis-h"></i>
+                <div className="header-about">
+                    {/* <i className="fas fa-ellipsis-h"></i> */}
+                    About
                 </div>
             </div>
 
 
-            <div className="header-search">
+            {/* <div className="header-search">
                 <input type="text" placeholder="Search All-Dem-Px..."></input>
-            </div>
+            </div> */}
             <div className="icons-right">
                 <div className="header-profile-main">
                     <div className="dropdown">
@@ -69,6 +71,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
     );
 
     return currentUser ? personalGreeting() : sessionLinks();
+    // return personalGreeting() if currentUser
 }
 
 export default Greeting;
