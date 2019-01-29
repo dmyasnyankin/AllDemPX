@@ -51,24 +51,24 @@
 
 
 .photo-index-item {
+  height: 300px;
+  width: 400px;
   padding: 5px 10px;
   cursor: pointer;
-  
+  // display: flex;
+  align-content: center;
+  transition: height 0.3s, width 0.3s linear;
+
   &:hover {
     background-color: lightblue;
-    
+    height: 321px;
+    width: 428px;
   }
 }
 
 .photo-index-picture{
-  height: 300px;
-  width: 400px;
-  transition: height 0.3s, width 0.3s linear;
-}
-
-.photo-index-picture:hover{
-  height: 321px;
-  width: 428px;
+  height: 100%;
+  width: 100%;
 }
 
 .photo-index-picture-title{
@@ -90,13 +90,23 @@
 }
 
 .photo-index-delete{
-  margin: auto;
+  position: relative;
+  margin-top: -161%;
+  margin-left: 94%;
   display: flex;
+  justify-content: flex-end;
   font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
   text-shadow: 0.5px 0.5px 0.5px darkgray;
+  color: black;
 }
   .photo-index-delete-frame{
-    background: transparent;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    background: antiquewhite;
+    border-radius: 1px;
   }
 
 .photo-index-title{
