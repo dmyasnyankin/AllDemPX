@@ -46,7 +46,7 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 <div className="header-profile-main">
                     <div className="dropdown">
                         <div className="header-profile">
-                            <div className="jerrik">
+                            <div className="jeader-div">
                                 <button className="dropbtn"><i className="fas fa-user-circle"></i></button>
                                 <div className="dropdown-content">
                                     <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
