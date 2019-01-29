@@ -27,12 +27,14 @@ const Greeting = ({currentUser, logout, location, history}) => {
                     
                 </div>
                 <div className="header-discover">
-                    {/* <i className="fas fa-images"></i> */}
-                    Discover
+                    <a href={"https://www.linkedin.com/in/dennis-myasnyankin/"}>
+                        <button className="header-discover">Discover</button>
+                    </a>
                 </div>
                 <div className="header-about">
-                    {/* <i className="fas fa-ellipsis-h"></i> */}
-                    About
+                    <a href={"https://github.com/dmyasnyankin/AllDemPX"}>
+                        <button className="header-about">About</button>
+                    </a>
                 </div>
             </div>
 

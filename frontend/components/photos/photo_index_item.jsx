@@ -19,7 +19,7 @@ const PhotoIndexItem = props => {
             </div>
             <br/> */}
             <div className="photo-index-delete">
-                <button className="photo-index-delete-frame" onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}>Delete</button>
+                <button className="photo-index-delete-frame" onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}><i class="fas fa-trash-alt"></i></button>
             </div>
         </div>
     </div>
