@@ -44,21 +44,13 @@ const Greeting = ({currentUser, logout, location, history}) => {
                 <div className="header-profile-main">
                     <div className="dropdown">
                         <div className="header-profile">
-                            <button className="dropbtn"><i className="fas fa-user-circle"></i></button>
-                            <div className="dropdown-content">
-                                <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
+                            <div className="jerrik">
+                                <button className="dropbtn"><i className="fas fa-user-circle"></i></button>
+                                <div className="dropdown-content">
+                                    <button className="profile-button" to="" onClick={() => logout().then(() => history.push("/"))}>Log Out</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="header-plane-main">
-                    <div className="header-plane">
-                        <i className="fab fa-telegram-plane"></i>
-                    </div>
-                </div>
-                <div className="header-bell-main">
-                    <div className="header-bell">
-                        <i className="fas fa-bell"></i>
                     </div>
                 </div>
                 <div className="header-upload-main">
