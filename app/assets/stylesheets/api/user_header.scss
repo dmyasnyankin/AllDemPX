@@ -126,7 +126,7 @@
         visibility: hidden;
         background: whitesmoke;
         // display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -139,6 +139,8 @@
         .dropdown:hover .dropdown-content{
             visibility: visible;
             color: black;
+            display: flex;
+            justify-content: center;
         }
 
 .header-upload-main{
