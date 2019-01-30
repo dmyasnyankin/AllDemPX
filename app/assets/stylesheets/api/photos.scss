@@ -109,6 +109,11 @@
     border-radius: 1px;
   }
 
+.photo-rec{
+  display: flex;
+  justify-content: space-between;
+}
+
 .photo-index-title{
   margin: auto;
   display: flex;

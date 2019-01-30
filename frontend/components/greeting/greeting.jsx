@@ -1,12 +1,23 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-// hi dennis 
-
 const Greeting = ({currentUser, logout, location, history}) => {
     if (location.pathname=="/login" || location.pathname=="/signup"){
         return null;
     }
+
+    // upload(e) {
+    //     e.preventDefault();
+    
+    //     document.getElementById('user-modal').style.display = 'block';
+    // }
+    
+    // closeModal(e) {
+    //     e.preventDefault();
+    
+    //     document.getElementById('user-modal').style.display = 'none';
+    
+    // }
     const sessionLinks = () => (
         <div className="tip_top_logo">
             <div className="all-dem-px"></div>
@@ -55,11 +66,14 @@ const Greeting = ({currentUser, logout, location, history}) => {
                         </div>
                     </div>
                 </div>
-                <div className="header-upload-main">
-                    <div className="header-upload">
+                <div>
+                    <div className="empty-upload"></div>
+                </div>
+                {/* <div className="header-upload-main">
+                    <div className="header-upload">                            
                         <Link to="/photos/:photoId"><i className="fas fa-cloud-upload-alt"></i></Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </hgroup>
     );
