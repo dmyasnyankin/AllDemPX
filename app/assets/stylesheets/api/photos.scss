@@ -129,45 +129,11 @@
 }
 
 .photo-image{
-    background: transparent;
-    margin-top: 10px;
-}
-
-.photo-submit-button{
-    border-radius: 2px;
-    background: darkgray;
-    margin-top: 10px;
-    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-}
-
-.photo-index-bottom-page{
-}
-
-.photo-index-upload-title{
   display: flex;
-  justify-content: flex-start;
-  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  text-shadow: 0.5px 0.5px 0.5px darkgray;
+  justify-content: center;
+  background: transparent;
+  margin-top: 10px;
 }
 
-.photo-index-upload-description{
-  display: flex;
-  justify-content: flex-start;
-  font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-  font-weight: lighter;
-  text-shadow: 0.5px 0.5px 0.5px darkgray;
-}
 
-.photo-form{
-  margin: auto;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.photo-file{
-  cursor: pointer;
-}

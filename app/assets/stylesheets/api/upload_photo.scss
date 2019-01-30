@@ -9,7 +9,7 @@ body.upload-modal{
 .upload-modal{
     position: fixed;
     // height: 100%;
-    width: 100vw;
+    width: 100%;
     top:0;
     // right: 0;
     // left: -1;
@@ -19,9 +19,19 @@ body.upload-modal{
     display: none;
 }
 
+.photo-index-bottom-wrp{
+
+}
+
     .photo-index-bottom-page{
         // margin-top: 25%;
         // margin-bottom: 25%;
+        // margin-left: -25%;
+        // margin-right: -25%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         height: 50%;
         width: 50%;
     }
@@ -35,7 +45,11 @@ body.upload-modal{
 }
 
 .upload-form-container{
-
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 50%;
+    width: 50%;
 }
 
 .photo-index-upload-title{
@@ -59,8 +73,10 @@ body.upload-modal{
     margin: auto;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background: transparent;
   }
   
   .photo-file{
