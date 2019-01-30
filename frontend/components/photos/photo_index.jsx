@@ -58,7 +58,7 @@ class PhotoIndex extends React.Component {
                     <div className='close-button-wrp'>
                         <button className='close-button' onClick={this.closeModal}>×</button>
                     </div>
-                    <div className='form-container'>
+                    <div className='upload-form-container'>
                         <CreatePhotoFormContainer/>
                     </div>
                 </div>

@@ -1,0 +1,75 @@
+body.upload-modal{
+    overflow: hidden;
+}
+
+#user-modal{
+
+}
+
+.upload-modal{
+    position: fixed;
+    // height: 100%;
+    width: 100vw;
+    top:0;
+    // right: 0;
+    // left: -1;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+    z-index: 1000;
+    display: none;
+}
+
+    .photo-index-bottom-page{
+        // margin-top: 25%;
+        // margin-bottom: 25%;
+        height: 50%;
+        width: 50%;
+    }
+
+.close-button-wrp{
+
+}
+
+.close-button{
+
+}
+
+.upload-form-container{
+
+}
+
+.photo-index-upload-title{
+    display: flex;
+    justify-content: flex-start;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0.5px 0.5px 0.5px darkgray;
+  }
+  
+  .photo-index-upload-description{
+    display: flex;
+    justify-content: flex-start;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    font-weight: lighter;
+    text-shadow: 0.5px 0.5px 0.5px darkgray;
+  }
+  
+  .photo-form{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .photo-file{
+    cursor: pointer;
+  }
+
+  .photo-submit-button{
+    border-radius: 2px;
+    background: darkgray;
+    margin-top: 10px;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+}
