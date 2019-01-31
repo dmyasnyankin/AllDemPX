@@ -24,23 +24,35 @@ body.upload-modal{
 }
 
     .photo-index-bottom-page{
-        // margin-top: 25%;
-        // margin-bottom: 25%;
-        // margin-left: -25%;
-        // margin-right: -25%;
+
         margin: auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 50%;
+        height: 40%;
         width: 50%;
     }
 
 .close-button-wrp{
-
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 10% 0 10%;
 }
 
 .close-button{
+    cursor: pointer;
+    color: red;
+    background: transparent;
+    display: block;
+    font-size: 36px;
+    // width: 36px;
+    font-weight: 600;
+
+    // height: 36px;
+    // padding: 6px 10px;
+    margin: 0;
+    border: none;
+    text-shadow: 1px 1px 1px black;
 
 }
 
@@ -54,18 +66,24 @@ body.upload-modal{
 
 .photo-index-upload-title{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-weight: bold;
+    padding-top: 20px;
     font-size: 30px;
     text-shadow: 0.5px 0.5px 0.5px darkgray;
   }
   
   .photo-index-upload-description{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-weight: lighter;
+    padding-top: 20px;
     text-shadow: 0.5px 0.5px 0.5px darkgray;
   }
   
@@ -73,19 +91,64 @@ body.upload-modal{
     margin: auto;
     padding: 10px;
     display: flex;
+    height: 250px;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     background: transparent;
   }
   
-  .photo-file{
-    cursor: pointer;
-  }
+  
+  .photo-title-wrp{
+      width: 250px;
+      height: 20px;
+      border-radius: 20px;
+      border: 2px solid rgba(169, 169, 169, 0.5);
+      background: rgba(0, 0, 139, 0.8);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+        .photo-file{
+        cursor: pointer;
+        display: none;
+        }
+
+        .photo-file-edit{
+            cursor: pointer;
+            font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            color: white;
+            font-size: 15px;
+            height: 20px;
+        }
+
+        .photo-title{
+            background: transparent;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid darkgray;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
   .photo-submit-button{
-    border-radius: 2px;
-    background: darkgray;
+    // border-radius: 2px;
+    // background: darkgray;
+    font-size: 20px;
+    color: white;
     margin-top: 10px;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid rgba(169, 169, 169, 0.5);
+    background: rgba(0, 153, 229, 0.9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

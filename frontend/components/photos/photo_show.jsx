@@ -20,7 +20,7 @@ class PhotoShow extends React.Component {
                     <div className="show-picture-frame">
                         <img className="show-picture" src={this.props.photo.imageUrl} />
                     </div>
-                    <div className="show-index-btn"><Link to="/users">Go Back Bruuuuther</Link></div>
+                    <div className="show-index-btn"><Link to="/users">Go Back to Previous Page</Link></div>
                 </div>
             </div>
         );

@@ -32,11 +32,14 @@ class PhotoForm extends React.Component {
                 <div className="photo-index-bottom-wrp">
                     <div className="photo-index-bottom-page">
                         <hr/>
-                        <h2 className="photo-index-upload-title">Upload Your Own Photos Now!</h2>
-                        <h3 className="photo-index-upload-description">Share your work with the world</h3>
+                        <p className="photo-index-upload-title">Upload Your Photos!</p>
+                        <p className="photo-index-upload-description">Share your work with the world</p>
                         <form className="photo-form" onSubmit={this.handleSubmit}>
-                            <input className="photo-title" type="text" value={this.state.title} onChange={this.update("title")} />
-                            <input className="photo-file" type="file" onChange={this.handleFile.bind(this)}/>
+                            <input className="photo-title" type="text" placeholder="Give your work a title!" value={this.state.title} onChange={this.update("title")} />
+                            <div className="photo-title-wrp">
+                                <input className="photo-file" id="file" type="file" onChange={this.handleFile.bind(this)}/>
+                                <label className="photo-file-edit" for="file">Select Photos!</label>
+                            </div>
                             <input className="photo-submit-button" type="submit" value="Submit" />
                         </form>
                     </div>
