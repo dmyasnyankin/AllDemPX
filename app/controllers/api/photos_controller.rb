@@ -18,6 +18,8 @@ class Api::PhotosController < ApplicationController
             render "api/photos/show"
         else
             render json: @photo.errors.full_messages, status: 422
+            # render json: ["Please give your entry a title or choose a photo to upload"], status: 401
+
         end
     end
 

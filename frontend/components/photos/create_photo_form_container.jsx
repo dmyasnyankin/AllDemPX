@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import PhotoForm from './photo_form';
 import { createPhoto } from '../../actions/photos_actions';
 
-const mapStateToProps = state => {
+const mapStateToProps = ({errors}) => {
     return ({
+        errors: errors.upload,
         photo: { title: "", image_url: "" },
         formType: "Upload Photo"
     })

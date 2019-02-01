@@ -25,6 +25,18 @@ class PhotoForm extends React.Component {
     handleFile(e){
         this.setState({photoFile: e.currentTarget.files[0]});
     }
+    
+    renderErrors() {
+        return (
+            <ul>
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
 
     render() {
         return (
@@ -34,6 +46,7 @@ class PhotoForm extends React.Component {
                         <hr/>
                         <p className="photo-index-upload-title">Upload Your Photos!</p>
                         <p className="photo-index-upload-description">Share your work with the world</p>
+                        {this.renderErrors()}
                         <form className="photo-form" onSubmit={this.handleSubmit}>
                             <input className="photo-title" type="text" placeholder="Give your work a title!" value={this.state.title} onChange={this.update("title")} />
                             <div className="photo-title-wrp">

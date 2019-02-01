@@ -8,7 +8,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import PhotoIndexContainer from './photos/photo_index_container';
 import PhotoShowContainer from './photos/photo_show_container';
 //switch router doesnt work when i wrap my auth routes in it 
-
+import Footer from './footer/footer';
 
 const App = () => (
     <Switch>
@@ -21,6 +21,7 @@ const App = () => (
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <Route path="/users" component={PhotoIndexContainer} />
         <Route path="/photos/:photoId" component={PhotoShowContainer}/>
+        <Route path="/" component={Footer}/>
     </div>
     </Switch>
     
