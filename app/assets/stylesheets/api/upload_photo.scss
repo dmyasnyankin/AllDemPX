@@ -154,3 +154,9 @@ body.upload-modal{
     align-content: center;
     text-shadow: 0.5px 0.5px 0.5px black
 }
+
+        .photo-submit-button:hover{
+            .photo-title{
+                color: red;
+            }
+        }
