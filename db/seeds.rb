@@ -15,7 +15,7 @@ Photo.destroy_all
 photo1 = Photo.create(title:"Pretty Bridge", author_id: demo1.id)
 photo2 = Photo.create(title:"Beautiful Bridge", author_id: demo1.id)
 photo3 = Photo.create(title:"Wonderful Bridge", author_id: demo1.id)
-photo4 = Photo.create(title:"Opacity 0.5", author_id: demo1.id)
+photo4 = Photo.create(title:"Opacity 0.8", author_id: demo1.id)
 photo5 = Photo.create(title:"Gnarly Bridge", author_id: demo1.id)
 photo6 = Photo.create(title:"Sick Bridge", author_id: demo2.id)
 photo7 = Photo.create(title:"Best City", author_id: demo2.id)
