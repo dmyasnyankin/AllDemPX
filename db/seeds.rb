@@ -15,7 +15,7 @@ Photo.destroy_all
 photo1 = Photo.create(title:"Pretty Bridge", author_id: demo1.id)
 photo2 = Photo.create(title:"Beautiful Bridge", author_id: demo1.id)
 photo3 = Photo.create(title:"Wonderful Bridge", author_id: demo1.id)
-photo4 = Photo.create(title:"Amazing Bridge", author_id: demo1.id)
+photo4 = Photo.create(title:"Opacity 0.5", author_id: demo1.id)
 photo5 = Photo.create(title:"Gnarly Bridge", author_id: demo1.id)
 photo6 = Photo.create(title:"Sick Bridge", author_id: demo2.id)
 photo7 = Photo.create(title:"Best City", author_id: demo2.id)
@@ -71,7 +71,7 @@ image3 = open("app/assets/images/ggb3.jpg")
 photo3.photo.attach(io: image3, filename: "wonderful_bridge.jpg")
 
 image4 = open("app/assets/images/ggb4.jpg")
-photo4.photo.attach(io: image4, filename: "amazing_bridge.jpg")
+photo4.photo.attach(io: image4, filename: "opacity.jpg")
 
 image5 = open("app/assets/images/baynite.jpg")
 photo5.photo.attach(io: image5, filename: "gnarly_bridge.jpg")
