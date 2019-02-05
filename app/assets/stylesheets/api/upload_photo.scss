@@ -156,7 +156,17 @@ body.upload-modal{
 }
 
         .photo-submit-button:hover{
-            .photo-title{
-                color: red;
-            }
+            color: lightblue;
+        }
+
+        .photo-file-edit:hover{
+            color: lightblue;
+        }
+
+        .upload-errors{
+            display: flex;
+            justify-content: center;
+            color: red;
+            padding-top: 30px;
+            margin-bottom: -30px;
         }

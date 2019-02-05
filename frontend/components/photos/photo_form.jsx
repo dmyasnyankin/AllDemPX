@@ -27,15 +27,21 @@ class PhotoForm extends React.Component {
     }
     
     renderErrors() {
+        if (this.props.errors) {
+            console.log(this.props.errors)
         return (
-            <ul>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
-            </ul>
-        );
+                // <ul>
+                //     {this.props.errors.map((error, i) => (
+                //         <li key={`error-${i}`}>
+                //             {error}
+                //         </li>
+                //     ))}
+                // </ul>
+                <div className="upload-errors">
+                    {this.props.errors.error}
+                </div>
+            );
+        }
     }
 
     render() {
@@ -51,7 +57,7 @@ class PhotoForm extends React.Component {
                             <input className="photo-title" type="text" placeholder="Give your work a title!" value={this.state.title} onChange={this.update("title")} />
                             <div className="photo-title-wrp">
                                 <input className="photo-file" id="file" type="file" onChange={this.handleFile.bind(this)}/>
-                                <label className="photo-file-edit" for="file">Select Photos!</label>
+                                <label className="photo-file-edit" htmlFor="file">Select Photos!</label>
                             </div>
                             <input className="photo-submit-button" type="submit" value="Submit" />
                         </form>

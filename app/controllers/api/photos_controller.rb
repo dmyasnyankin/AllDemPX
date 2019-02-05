@@ -17,9 +17,9 @@ class Api::PhotosController < ApplicationController
         if @photo.save
             render "api/photos/show"
         else
-            render json: @photo.errors.full_messages, status: 422
+            # render json: @photo.errors.full_messages, status: 422
             # render json: ["Please give your entry a title or choose a photo to upload"], status: 401
-
+            render json: { error: "Title can't be blank" }, status: :unprocessable_entity
         end
     end
 
