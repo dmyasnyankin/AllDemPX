@@ -28,7 +28,6 @@ class PhotoForm extends React.Component {
     
     renderErrors() {
         if (this.props.errors) {
-            // console.log(this.props.errors)
         return (
                 // <ul>
                 //     {this.props.errors.map((error, i) => (
