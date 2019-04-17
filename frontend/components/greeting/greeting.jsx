@@ -56,7 +56,6 @@ const Greeting = ({currentUser, logout, location, history}) => {
             <div className="icons-right">
                 <div className="header-profile-main">
                     <div className="dropdown">
-
                         <div className="header-profile">
                             <div className="jeader-div">
                                 <button className="dropbtn"><i className="fas fa-user-circle"></i></button>
@@ -65,12 +64,9 @@ const Greeting = ({currentUser, logout, location, history}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="dropdown-right-div"></div>
                     </div>
                 </div>
-                <div>
-                    <div className="empty-upload"></div>
-                </div>
+                <div className="empty-upload"></div>
                 {/* <div className="header-upload-main">
                     <div className="header-upload">                            
                         <Link to="/photos/:photoId"><i className="fas fa-cloud-upload-alt"></i></Link>
