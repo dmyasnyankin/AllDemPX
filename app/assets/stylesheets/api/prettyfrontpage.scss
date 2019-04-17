@@ -133,10 +133,13 @@ a button:hover{
 .splash-main-quote{
     display: flex;
     justify-content: center;
+    // align-content: center;
+    align-items: center;
+    margin: auto;
     margin-top: 150px;
     font-size: 38px;
     // text-align: center;
-    // max-width: 900px;
+    max-width: 900px;
     // padding: 40px 0;
     // margin: 0 auto;
     color: #FFF;
@@ -148,6 +151,7 @@ a button:hover{
     display: flex;
     justify-content: center;
     margin-top: 270px;
+    margin: auto;
     font-size: 20px;
     // text-align: center;
     // max-width: 900px;
@@ -159,13 +163,11 @@ a button:hover{
     text-shadow: 1px 1px 1px black;
 }
 
-.splash-link{
+.splash-button{
+    margin: auto;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
-}
-
-.splash-button{
-    margin-top: 100px;
     height: 70px;
     width: 160px;
     border-radius: 60px;
@@ -173,8 +175,8 @@ a button:hover{
     font-size: 26px;
     color: white;
     border: 3px solid transparent;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     align-items: center;
     font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     text-shadow: 1px 1px 1px black;
