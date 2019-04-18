@@ -10,47 +10,93 @@
     background-color: whitesmoke;
 }
 
-.show-picture-frame{
-    display: flex;
-    height: 400px;
-    width: 600px;
-}
+    .show-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
 
-.show-picture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-}
+    .show-title{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    
+    .show-picture-frame{
+        display: flex;
+        height: 400px;
+        width: 600px;
+    }
 
-.show-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-}
+        .show-picture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+        }
 
-.show-title{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-}
+    .show-features {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 600px;
+    }
 
-.show-index-btn{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-}
+        .show-comments{
+            padding-left: 10px;
+            height: 60px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            margin: auto;
+            margin-left: 2%;
+            font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+            font-size: 20px;
+            align-items: center;
+        }
+
+        .show-likes{
+            height: 60px;
+            width: 60px;
+            // border: 1px solid black;
+            border-radius: 5px;
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: -1%;
+            font-size: 60px;
+            color: lightblue;
+        }
+            // .show-likes:hover{
+            //     border: 3px solid rgba(0, 153, 229, 0.2);
+            //     // border: 1px solid lightblue;
+            //     // // height: 80px;
+            //     // border-radius: 50px;
+            // }
+
+            .show-likes:active{
+                color: blue;
+            }
+
+    .show-index-btn{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    }

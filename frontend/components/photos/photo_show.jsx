@@ -20,6 +20,12 @@ class PhotoShow extends React.Component {
                     <div className="show-picture-frame">
                         <img className="show-picture" src={this.props.photo.imageUrl} />
                     </div>
+                    <div className="show-features">
+                        <div>
+                            <input className="show-comments" type="text" placeholder="Add a comment..."></input>
+                        </div>
+                        <div className="show-likes"><i class="fas fa-heart"></i></div>
+                    </div>
                     <div className="show-index-btn"><Link to="/users">Go Back to Previous Page</Link></div>
                 </div>
             </div>
