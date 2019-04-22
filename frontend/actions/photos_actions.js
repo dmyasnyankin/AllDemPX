@@ -5,6 +5,9 @@ export const RECEIVE_ALL_PHOTOS = "RECEIVE_ALL_PHOTOS";
 export const RECEIVE_PHOTO = "RECEIVE_PHOTO";
 export const REMOVE_PHOTO = "REMOVE_PHOTO";
 
+//ADDED
+export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
+
 export const RECEIVE_UPLOAD_ERRORS = 'RECEIVE_UPLOAD_ERRORS';
 
 
@@ -28,6 +31,13 @@ const receiveErrors = errors => ({
     errors
 });
 
+// ADDED
+const receiveComment = ({ comment, author }) => ({
+    type: RECEIVE_COMMENT,
+    comment,
+    author
+});
+
 export const fetchPhotos = () => dispatch => (
     PhotosAPIUtil.fetchPhotos().then( photos => dispatch(receivePhotos(photos)))
 );
@@ -44,9 +54,9 @@ export const fetchPhoto = (id) => dispatch => (
 //     )
 // };
 export const createPhoto = (photo) => dispatch => (
-        PhotosAPIUtil.createPhoto(photo).then( 
-            photo => dispatch(receivePhoto(photo)),
-            err => (dispatch(receiveErrors(err.responseJSON))))
+    PhotosAPIUtil.createPhoto(photo).then( 
+        photo => dispatch(receivePhoto(photo)),
+        err => (dispatch(receiveErrors(err.responseJSON))))
 );
 
 export const updatePhoto = (photo) => dispatch => (
@@ -55,6 +65,13 @@ export const updatePhoto = (photo) => dispatch => (
 
 export const deletePhoto = (id) => dispatch => (
     PhotosAPIUtil.deletePhoto(id).then( photo => dispatch(removePhoto(photo)))
+);
+
+//ADDED
+export const createComment = (comment) => dispatch => (
+    PhotosAPIUtil.createComment(comment).then(
+        comment => dispatch(receiveComment(comment))
+    )
 );
 
 
