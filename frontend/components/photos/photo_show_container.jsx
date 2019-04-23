@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => {
     return ({
         photo: state.entities.photos[photoId],
         photoId: state.entities.photos.photoId,
-        comments
+        comments: comments
     })
 }
 

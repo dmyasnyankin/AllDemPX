@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CommentFormContainer from '../comments/comment_form_container';
+// import CommentListItemContainer from '../comments/comment_list_item_container';
+
+import CommentsDetail from '../comments/comments_details';
 
 class PhotoShow extends React.Component {
     componentDidMount() {
@@ -27,6 +30,9 @@ class PhotoShow extends React.Component {
                             {/* <input className="show-comments" type="text" placeholder="Add a comment..."></input> */}
                         </div>
                         <div className="show-likes"><i className="fas fa-heart"></i></div>
+                    </div>
+                    <div className="comments-list">
+                        {/* <CommentsDetail photo={photo} comments={comments} /> */}
                     </div>
                     <div className="show-index-btn"><Link to="/users">Go Back to Previous Page</Link></div>
                 </div>

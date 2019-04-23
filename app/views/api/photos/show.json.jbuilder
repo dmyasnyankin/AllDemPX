@@ -7,7 +7,7 @@ end
 @photo.comments.includes(:author).each do |comment|
   json.comments do
     json.set! comment.id do
-      json.partial! 'api/comments/comment', comment: comment
+      json.extract! comment, :id, :body, :photo_id, :author_id
     end
   end
 

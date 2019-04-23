@@ -16,9 +16,11 @@ const receivePhotos = (photos) => ({
     photos: photos
 });
 
-const receivePhoto = ({photo}) => ({
+const receivePhoto = ({photo, comments, authors}) => ({
     type: RECEIVE_PHOTO,
-    photo
+    photo,
+    comments,
+    authors
 });
 
 const removePhoto = (photo) => ({
@@ -70,8 +72,8 @@ export const deletePhoto = (id) => dispatch => (
 //ADDED
 export const createComment = (comment) => dispatch => (
     PhotosAPIUtil.createComment(comment).then(
-        comment => dispatch(receiveComment(comment))
-    )
+        comment => (dispatch(receiveComment(comment))
+    ))
 );
 
 
