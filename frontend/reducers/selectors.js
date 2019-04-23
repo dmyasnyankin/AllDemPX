@@ -2,7 +2,7 @@ export const selectPhoto = ({ photos }, photoId) => {
     return photos[photoId] || { commentIds: [] };
 };
 
-export const selectCommentsForBench = ({ photos, comments }, photo) => {
+export const selectCommentsForPhoto = ({ photos, comments }, photo) => {
     return photo.commentIds.map(commentId => comments[commentId]);
 };
 
