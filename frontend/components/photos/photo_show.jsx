@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CommentFormContainer from '../comments/comment_form_container';
 
 class PhotoShow extends React.Component {
     componentDidMount() {
@@ -21,8 +22,9 @@ class PhotoShow extends React.Component {
                         <img className="show-picture" src={this.props.photo.imageUrl} />
                     </div>
                     <div className="show-features">
-                        <div>
-                            <input className="show-comments" type="text" placeholder="Add a comment..."></input>
+                        <div >
+                            <CommentFormContainer/>
+                            {/* <input className="show-comments" type="text" placeholder="Add a comment..."></input> */}
                         </div>
                         <div className="show-likes"><i className="fas fa-heart"></i></div>
                     </div>

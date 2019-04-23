@@ -33,22 +33,24 @@ class CommentForm extends React.Component {
     render() {
         return (
             <div className="comment-form">
-                <form onSubmit={this.handleSubmit}>
-                    <label>Comment</label>
-                    <br/>
-
+                <form className="comment-structure" onSubmit={this.handleSubmit}>
+                    <input className="show-comments" type="text" placeholder="Add a comment..."></input>
+{/* 
                     <textarea 
                         cols="30"  
-                        rows="10"
+                        rows="3"
+                        placeholder="Add a Comment..."
                         value={this.state.body}
                         onChange={this.update("body")}
-                    />
+                    /> */}
                     <br/>
-                    <input type="submit"/>
+                    <button onClick={this.navigateToPhotoShow} className="comment-bubble" type="submit"><i className="far fa-comment"></i></button>
                 </form>
-                <button onClick={this.navigateToPhotoShow}>Cancel</button>
+                {/* <button onClick={this.navigateToPhotoShow}>Cancel</button> */}
             </div>
         );
     }
 
 }
+
+export default withRouter(CommentForm);

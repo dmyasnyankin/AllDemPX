@@ -1,4 +1,27 @@
-.comment-form{
-    height: 500px;
-    border: 2px solid black;
+
+
+.comment-structure{
+    display: flex;
+    flex-direction: row;
+}
+
+.show-comments{
+    padding-left: 10px;
+    height: 60px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-left: 2%;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+.comment-bubble{
+    font-size: 25px;
+    margin: auto;
+    margin-left: -20%;
+    color: lightblue;
 }
