@@ -6,7 +6,7 @@ import { selectCommentsForPhoto, selectPhoto } from '../../reducers/selectors';
 
 const mapStateToProps = (state, ownProps) => {
     let photoId = ownProps.match.params.photoId;
-    const photo = selectPhoto(state.entities, benchId);
+    const photo = selectPhoto(state.entities, photoId);
     const comments = selectCommentsForPhoto(state.entities, photo);
     return ({
         photo: state.entities.photos[photoId],
