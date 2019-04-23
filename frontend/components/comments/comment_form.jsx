@@ -13,7 +13,7 @@ class CommentForm extends React.Component {
     
 
     navigateToPhotoShow() {
-        const url = `/photos/${this.props.match.params.photoId}`
+        const url = `photos/${this.props.match.params.photoId}`
         this.props.history.push(url);
     }
 

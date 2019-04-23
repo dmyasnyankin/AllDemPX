@@ -3,7 +3,7 @@ class Api::PhotosController < ApplicationController
 
     def index
         @photos = Photo.all
-        @photos = photos.includes(:comments)
+        @photos = @photos.includes(:comments)
         render :index
     end
 
