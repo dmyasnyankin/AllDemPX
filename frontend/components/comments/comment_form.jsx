@@ -9,11 +9,12 @@ class CommentForm extends React.Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.navigateToPhotoShow = this.navigateToPhotoShow.bind(this);
+        this.update = this.update.bind(this);
     }
     
 
     navigateToPhotoShow() {
-        const url = `photos/${this.props.match.params.photoId}`
+        const url = `${this.props.match.params.photoId}`
         this.props.history.push(url);
     }
 
@@ -23,21 +24,26 @@ class CommentForm extends React.Component {
         const comment = Object.assign({}, this.state, {
             photo_id: photoId
         });
-        this.props.createComment(comment);
-        this.navigateToPhotoShow();
+        console.log(this.state)
+        comment.body = this.state.body;
+        console.log("comment from submit", comment)
+        this.props.createComment(comment).then(() => this.navigateToPhotoShow());
+        // this.navigateToPhotoShow();
     }
 
-    update(property) {
-        return e => this.setState({ [property]: e.currentTarget.value });
+    update(e) {
+        console.log(e.currentTarget.value)
+        return this.setState({ body: e.currentTarget.value });
+        
     }
 
     render() {
         return (
             <div className="comment-form">
                 <form className="comment-structure" onSubmit={this.handleSubmit}>
-                    <input className="show-comments" type="text" placeholder="Add a comment..."></input>
+                    <input className="show-comments" type="text" onChange={this.update} placeholder="Add a comment..."></input>
                     <br/>
-                    <button onClick={this.navigateToPhotoShow} className="comment-bubble" type="submit"><i className="far fa-comment"></i></button>
+                    <button onClick={this.navigateToPhotoShow} className="comment-bubble" type="button"><i className="far fa-comment"></i></button>
                 </form>
                 {/* <button onClick={this.navigateToPhotoShow}>Cancel</button> */}
             </div>

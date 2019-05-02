@@ -14,11 +14,11 @@ const PhotosReducer = (oldState = {}, action) => {
             newState = merge({}, oldState);
             delete newState[action.photoId];
             return newState;
-        case RECEIVE_COMMENT:
-            const { comment } = action;
-            newState = merge({}, oldState);
-            newState[comment.photoId].commentIds.push(comment.id);
-            return newState;
+        // case RECEIVE_COMMENT:
+        //     const { comment } = action;
+        //     newState = merge({}, oldState);
+        //     newState[comment.photoId].commentIds.push(comment.id);
+        //     return newState;
         default:
             return oldState;
     }
