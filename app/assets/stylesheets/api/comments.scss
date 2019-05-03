@@ -56,18 +56,14 @@
 }
 
 .ul-comments{
-    // height: 200px;
-    width: 350px;
-    // border: 1px solid black;
-    // border-radius: 5px;
+    min-width: 600px;
     display: flex;
     margin: auto;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-size: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
-    flex-wrap: wrap;
     box-sizing: border-box;
     overflow: scroll;
     color: darkgray;
@@ -77,12 +73,14 @@
 
 .ul-comments li{
     color: black;
-    padding: 5px;
+    padding: 15px;
     margin: auto;
-    min-width: 500px;
+    min-width: 600px;
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    border: 3px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;  
+    box-shadow: complement($color: #000000)
 }
 
 .comments-wrapper{
