@@ -6,7 +6,7 @@ const Comment = ({ comment }) => {
   return (
     <div>
       <ul>
-        <li>{body}</li>
+        <li>{body} - by Anonymous Photo Enthusiast</li>
 
       </ul>
     </div>
