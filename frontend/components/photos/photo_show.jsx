@@ -34,6 +34,8 @@ class PhotoShow extends React.Component {
                         </div>
                         <div className="show-likes"><i className="fas fa-heart"></i></div>
                     </div>
+                    <br/>
+                    <h1 className="comments-title">Comments</h1>
                     <div className="comments-list">
                             <CommentIndexContainer />
                         {/* <CommentListItemContainer photo={this.props.photo.id} comments={this.props.photo.comments} /> */}

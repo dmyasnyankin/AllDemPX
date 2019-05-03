@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 1100px;
     // width: 600px;
     margin-right: 50px;
     margin-left: 50px;
@@ -29,12 +29,13 @@
         font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
         font-weight: bold;
         font-size: 30px;
+        margin-bottom: 30px;
     }
     
     
     .show-picture-frame{
         display: flex;
-        height: 400px;
+        min-height: 400px;
         width: 600px;
     }
 
@@ -48,11 +49,12 @@
         }
 
     .show-features {
-        margin-top: 70px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         width: 600px;
+        padding: 80px;
+        padding-bottom: 30px;
     }
 
         .show-likes{
@@ -85,9 +87,4 @@
         padding: 20px;
         margin-top: 40px;
         font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-    }
-
-    .ul-comments{
-        height: 50px;
-        width: 200px;
     }

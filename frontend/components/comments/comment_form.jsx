@@ -16,7 +16,7 @@ class CommentForm extends React.Component {
     navigateToPhotoShow() {
         const url = `${this.props.match.params.photoId}`
         // this.props.history.push(url);
-        // window.location.reload();
+        window.location.reload();
     }
 
     handleSubmit(e) {
