@@ -61,7 +61,7 @@
     margin: auto;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-size: 20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     box-sizing: border-box;
@@ -72,15 +72,16 @@
 }
 
 .ul-comments li{
-    color: black;
     padding: 15px;
     margin: auto;
     min-width: 600px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
     border: 3px solid rgba(0, 0, 0, 0.3); 
     border-radius: 5px;  
     background-color: white;
+    align-items: flex-start;
 }
 
 .comments-wrapper{
@@ -93,4 +94,17 @@
 
 .empty-comment-div{
     height: 10px;
+}
+
+.comment-li{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-body{
+    color: black;
+}
+
+.comment-user-add-on{
+    color: darkgray;
 }
