@@ -50,6 +50,6 @@ export const createComment = (comment) => (
 export const fetchComments = () => (
     $.ajax({
         method: "GET",
-        url: "api/comments"
+        url: "api/photos"
     })
 )
