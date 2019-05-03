@@ -10,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
     const comments = selectCommentsForPhoto(state.entities, photo);
     return ({
         photo: state.entities.photos[photoId],
-        photoId: state.entities.photos.photoId,
+        // photoId: state.entities.photos.photoId,
         comments: comments
     })
 }

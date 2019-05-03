@@ -15,7 +15,8 @@ class CommentForm extends React.Component {
 
     navigateToPhotoShow() {
         const url = `${this.props.match.params.photoId}`
-        this.props.history.push(url);
+        // this.props.history.push(url);
+        // window.location.reload();
     }
 
     handleSubmit(e) {
@@ -43,7 +44,8 @@ class CommentForm extends React.Component {
                 <form className="comment-structure" onSubmit={this.handleSubmit}>
                     <input className="show-comments" type="text" onChange={this.update} placeholder="Add a comment..."></input>
                     <br/>
-                    <button onClick={this.navigateToPhotoShow} className="comment-bubble" type="button"><i className="far fa-comment"></i></button>
+                    {/* <button onClick={this.navigateToPhotoShow} className="comment-bubble" type="button"><i className="far fa-comment"></i></button> */}
+                    <button className="comment-bubble" type="button"><i className="far fa-comment"></i></button>
                 </form>
                 {/* <button onClick={this.navigateToPhotoShow}>Cancel</button> */}
             </div>

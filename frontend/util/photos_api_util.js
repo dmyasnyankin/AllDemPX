@@ -46,3 +46,10 @@ export const createComment = (comment) => (
         data: { comment }
     })
 );
+
+export const fetchComments = () => (
+    $.ajax({
+        method: "GET",
+        url: "api/comments"
+    })
+)

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CommentFormContainer from '../comments/comment_form_container';
+import CommentIndexContainer from '../comments/comment_index_container';
 // import CommentListItemContainer from '../comments/comment_list_item_container';
 
-import CommentsDetail from '../comments/comments_details';
+// import CommentListItemContainer from '../comments/comment_list_item_container';
 
 class PhotoShow extends React.Component {
     componentDidMount() {
@@ -12,11 +13,13 @@ class PhotoShow extends React.Component {
     }
 
     render() {
+
+        
         if (this.props.photo === undefined){
-           return (
+            return (
                 <div></div>
-           )
-        }
+                )
+            }
         return (
             <div className="show-page-content">
                 <div className="show-page">
@@ -32,7 +35,8 @@ class PhotoShow extends React.Component {
                         <div className="show-likes"><i className="fas fa-heart"></i></div>
                     </div>
                     <div className="comments-list">
-                        {/* <CommentsDetail photo={photo} comments={comments} /> */}
+                            <CommentIndexContainer />
+                        {/* <CommentListItemContainer photo={this.props.photo.id} comments={this.props.photo.comments} /> */}
                     </div>
                     <div className="show-index-btn"><Link to="/users">Go Back to Previous Page</Link></div>
                 </div>

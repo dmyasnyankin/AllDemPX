@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO, REMOVE_PHOTO, RECEIVE_COMMENT } from "../actions/photos_actions";
+import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO, REMOVE_PHOTO, RECEIVE_COMMENTS } from "../actions/photos_actions";
 import merge from "lodash/merge";
 
 const PhotosReducer = (oldState = {}, action) => {
@@ -14,11 +14,12 @@ const PhotosReducer = (oldState = {}, action) => {
             newState = merge({}, oldState);
             delete newState[action.photoId];
             return newState;
-        // case RECEIVE_COMMENT:
-        //     const { comment } = action;
-        //     newState = merge({}, oldState);
-        //     newState[comment.photoId].commentIds.push(comment.id);
-        //     return newState;
+        case RECEIVE_COMMENTS:
+            return action.comments;
+            // const { comment } = action;
+            // newState = merge({}, oldState);
+            // newState[comment.photoId].commentIds.push(comment.id);
+            // return newState;
         default:
             return oldState;
     }

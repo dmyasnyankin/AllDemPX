@@ -7,8 +7,8 @@ export const REMOVE_PHOTO = "REMOVE_PHOTO";
 
 //ADDED
 export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
-
 export const RECEIVE_UPLOAD_ERRORS = 'RECEIVE_UPLOAD_ERRORS';
+export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
 
 
 const receivePhotos = (photos) => ({
@@ -39,6 +39,11 @@ const receiveComment = ({ comment, author }) => ({
     comment,
     author
 });
+
+const receiveComments = (comments) => ({
+    type: RECEIVE_COMMENTS,
+    comments: comments
+})
 
 export const fetchPhotos = () => dispatch => (
     PhotosAPIUtil.fetchPhotos().then( photos => dispatch(receivePhotos(photos)))
@@ -76,6 +81,10 @@ export const createComment = (comment) => dispatch => (
             console.log(comment)
             dispatch(receiveComment(comment))
     })
+);
+
+export const fetchComments = () => dispatch => (
+    PhotosAPIUtil.fetchComments().then( comments => dispatch(receiveComments(comments)))
 );
 
 
