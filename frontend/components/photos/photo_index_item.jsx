@@ -6,7 +6,7 @@ const PhotoIndexItem = props => {
     return (
     <div className="photo-index-item">
         <div className="photo-index-picture">
-            <Link to={`/photos/${props.photo.id}`}><img src={props.photo.imageUrl}/></Link>
+            <Link onChange={window.location.reload} to={`/photos/${props.photo.id}`}><img src={props.photo.imageUrl}/></Link>
         </div>
         <br/>
         {/* <div className="photo-index-picture-title">
