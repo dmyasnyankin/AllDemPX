@@ -27,6 +27,7 @@ class PhotoShow extends React.Component {
                     <div className="show-picture-frame">
                         <img className="show-picture" src={this.props.photo.imageUrl} />
                     </div>
+                    <h1 className="comments-title">Comments</h1>
                     <div className="show-features">
                         <div >
                             <CommentFormContainer/>
@@ -35,7 +36,6 @@ class PhotoShow extends React.Component {
                         <div className="show-likes"><i className="fas fa-heart"></i></div>
                     </div>
                     <br/>
-                    <h1 className="comments-title">Comments</h1>
                     <div className="comments-list">
                             <CommentIndexContainer />
                         {/* <CommentListItemContainer photo={this.props.photo.id} comments={this.props.photo.comments} /> */}

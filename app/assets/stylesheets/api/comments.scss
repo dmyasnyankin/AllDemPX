@@ -28,10 +28,10 @@
 
 .comments-title{
     display: flex;
-    margin: auto;
+    margin-top: 90px;
     justify-content: flex-start;
     min-width: 600px;
-    margin-left: 80px;
+    margin-left: 20px;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     color: black;
     font-size: 25px;
@@ -45,9 +45,9 @@
     border: 1px solid black;
     border-radius: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 80px;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-size: 10px;
@@ -64,6 +64,22 @@
     display: flex;
     margin: auto;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: scroll;
+    color: darkgray;
+    padding-right: 10px;
+}
+
+.ul-comments li{
+    color: black;
+    padding: 5px;
+    margin: auto;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
