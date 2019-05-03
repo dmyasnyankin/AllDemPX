@@ -51,7 +51,7 @@
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-size: 10px;
     align-items: center;
-    background: white;
+    background: aliceblue;
     margin-bottom: 30px;
 }
 
@@ -62,7 +62,7 @@
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     font-size: 20px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
     box-sizing: border-box;
     overflow: scroll;
@@ -80,7 +80,7 @@
     flex-direction: column;
     border: 3px solid rgba(0, 0, 0, 0.3); 
     border-radius: 5px;  
-    box-shadow: complement($color: #000000)
+    background-color: white;
 }
 
 .comments-wrapper{
