@@ -8,8 +8,8 @@ const Comment = ({ comment }) => {
       <ul>
 
         <li className="comment-li">
-          <p className="comment-body">{body} </p>
-          <p className="comment-user-add-on">- by Anonymous Photo Enthusiast</p>
+          <p className="comment-body">{body}</p>
+          <p className="comment-user-add-on">Anonymous Photo Enthusiast</p>
         </li>
 
       </ul>
