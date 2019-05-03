@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1100px;
+    height: 1200px;
     // width: 600px;
     margin-right: 50px;
     margin-left: 50px;
@@ -35,7 +35,7 @@
     
     .show-picture-frame{
         display: flex;
-        min-height: 400px;
+        min-height: 500px;
         width: 600px;
     }
 
@@ -53,7 +53,8 @@
         justify-content: space-between;
         flex-direction: row;
         width: 600px;
-        padding: 40px;
+        padding-top: 20px;
+        margin-left: 20px;
     }
 
         .show-likes{

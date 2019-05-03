@@ -27,19 +27,22 @@ class PhotoShow extends React.Component {
                     <div className="show-picture-frame">
                         <img className="show-picture" src={this.props.photo.imageUrl} />
                     </div>
-                    <h1 className="comments-title">Comments</h1>
-                    <div className="show-features">
-                        <div >
-                            <CommentFormContainer/>
-                            {/* <input className="show-comments" type="text" placeholder="Add a comment..."></input> */}
+                    {/* <div className="empty-comment-div"></div> */}
+                        <div className="comments-wrapper">
+                                <h1 className="comments-title">Comments</h1>
+                                <div className="show-features">
+                                    <div >
+                                        <CommentFormContainer/>
+                                        {/* <input className="show-comments" type="text" placeholder="Add a comment..."></input> */}
+                                    </div>
+                                    <div className="show-likes"><i className="fas fa-heart"></i></div>
+                                </div>
+                                <br/>
+                                <div className="comments-list">
+                                        <CommentIndexContainer />
+                                    {/* <CommentListItemContainer photo={this.props.photo.id} comments={this.props.photo.comments} /> */}
+                                </div>
                         </div>
-                        <div className="show-likes"><i className="fas fa-heart"></i></div>
-                    </div>
-                    <br/>
-                    <div className="comments-list">
-                            <CommentIndexContainer />
-                        {/* <CommentListItemContainer photo={this.props.photo.id} comments={this.props.photo.comments} /> */}
-                    </div>
                     <div className="show-index-btn"><Link to="/users">Go Back to Previous Page</Link></div>
                 </div>
             </div>

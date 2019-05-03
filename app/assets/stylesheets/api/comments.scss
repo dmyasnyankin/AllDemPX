@@ -28,10 +28,10 @@
 
 .comments-title{
     display: flex;
-    margin-top: 90px;
+    margin-top: 20px;
     justify-content: flex-start;
     min-width: 600px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,Nimbus Sans L,Liberation Sans,Arial,sans-serif;
     color: black;
     font-size: 25px;
@@ -40,7 +40,7 @@
 }
 
 .comments-list{
-    min-height: 200px;
+    min-height: 300px;
     width: 600px;
     border: 1px solid black;
     border-radius: 5px;
@@ -69,16 +69,30 @@
     flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    overflow: scroll;
+    // overflow: auto;
     color: darkgray;
     padding-right: 10px;
+    height: 300px;
 }
 
 .ul-comments li{
     color: black;
     padding: 5px;
     margin: auto;
-    min-width: 300px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
+    margin-left: 20%;
+}
+
+.comments-wrapper{
+    min-height: 500px;
+    min-width: 500px;
+    background-color: rgba(211, 211, 211, 0.3);
+    border: 3px solid rgba(169, 169, 169, 0.2);
+    border-radius: 5px;
+}
+
+.empty-comment-div{
+    height: 10px;
 }
