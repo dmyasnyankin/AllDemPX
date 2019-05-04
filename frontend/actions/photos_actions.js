@@ -78,7 +78,6 @@ export const deletePhoto = (id) => dispatch => (
 export const createComment = (comment) => dispatch => (
     PhotosAPIUtil.createComment(comment).then(
         comment => {
-            console.log(comment)
             dispatch(receiveComment(comment))
     })
 );

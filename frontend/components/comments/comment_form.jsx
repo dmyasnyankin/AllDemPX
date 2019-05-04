@@ -25,17 +25,13 @@ class CommentForm extends React.Component {
         const comment = Object.assign({}, this.state, {
             photo_id: photoId
         });
-        console.log(this.state)
         comment.body = this.state.body;
-        console.log("comment from submit", comment)
         this.props.createComment(comment).then(() => this.navigateToPhotoShow());
         // this.navigateToPhotoShow();
     }
 
     update(e) {
-        console.log(e.currentTarget.value)
         return this.setState({ body: e.currentTarget.value });
-        
     }
 
     render() {
