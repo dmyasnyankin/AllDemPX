@@ -24,9 +24,11 @@ class PhotoShow extends React.Component {
             <div className="show-page-content">
                 <div className="show-page">
                     <h2 className="show-title">{this.props.photo.title}</h2>
-                    <div className="show-picture-frame">
-                        <img className="show-picture" src={this.props.photo.imageUrl} />
-                    </div>
+                        <div className="show-pic-wrp">
+                            <div className="show-picture-frame">
+                                <img className="show-picture" src={this.props.photo.imageUrl} />
+                            </div>
+                        </div>
                         <div className="comments-wrapper">
                                 <h1 className="comments-title">Comments</h1>
                                 <div className="show-features">

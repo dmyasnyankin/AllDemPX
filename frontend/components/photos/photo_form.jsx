@@ -58,7 +58,7 @@ class PhotoForm extends React.Component {
                                 <input className="photo-file" id="file" type="file" onChange={this.handleFile.bind(this)}/>
                                 <label className="photo-file-edit" htmlFor="file">Select Photos!</label>
                             </div>
-                            <input className="photo-submit-button" type="submit" value="Submit" />
+                            <input className="photo-submit-button" onClick={window.location.reload}type="submit" value="Submit" />
                         </form>
                     </div>
                 </div>

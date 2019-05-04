@@ -32,19 +32,26 @@
         margin-bottom: 30px;
     }
     
-    
+    //////////////////////////
+    .show-pic-wrp{
+        height: 420px;
+        width: 1600px;
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+
     .show-picture-frame{
         display: flex;
         min-height: 500px;
-        width: 600px;
     }
 
         .show-picture{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            width: 100%;
+            max-height: 400px;
+            max-width: 600px;
             padding: 10px;
         }
 
